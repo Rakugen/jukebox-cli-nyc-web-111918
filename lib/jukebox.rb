@@ -10,3 +10,33 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+def run
+  puts "Please enter a command:"
+  input = gets.chomp
+  if input == "help"
+    help
+  elsif input == list
+    list
+  elsif input == play
+    play
+  else
+    exit_jukebox
+  end
+
+end
+
+def help
+
+end
+
+def list
+
+end
+
+def play
+
+end
+
+def exit_jukebox
+
+end
