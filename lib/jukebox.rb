@@ -13,16 +13,19 @@ songs = [
 def run(songs)
   puts "Please enter a command:"
   input = gets.chomp
-  if input == "help"
-    help
-  elsif input == "list"
-    list(songs)
-  elsif input == "play"
-    play
-  else
-    exit_jukebox
-  end
+  while true
+    case input
 
+    when "help"
+      help
+    when "list"
+      list(songs)
+    when "play"
+      play(songs)
+    when "exit"
+      exit_jukebox
+      break
+  end
 end
 
 def help
@@ -41,7 +44,10 @@ def list(songs)
 
 end
 
-def play
+def play(songs)
+  puts "Please enter a song name or number:"
+  song = gets.chomp
+
 
 end
 
