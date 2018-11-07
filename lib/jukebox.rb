@@ -15,9 +15,9 @@ def run
   input = gets.chomp
   if input == "help"
     help
-  elsif input == list
+  elsif input == "list"
     list
-  elsif input == play
+  elsif input == "play"
     play
   else
     exit_jukebox
